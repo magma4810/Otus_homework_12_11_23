@@ -9,3 +9,11 @@ export function returnMounth(num){
     const monthName = date.toLocaleString('default', { month: 'long' });
     return monthName;
 }
+export function sumFrom50_Before100(){
+    let summa = 50;
+    for (let i = 50;i<101;i++){
+        summa += i
+        console.log(i)
+    }
+    return summa;
+}
