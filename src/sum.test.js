@@ -1,4 +1,4 @@
-import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven } from './sum'
+import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven,averageAllOddNum } from './sum'
 
 describe('test code' , ()=>{
     it('return sum num', ()=>{
@@ -14,6 +14,10 @@ describe('test code' , ()=>{
         expect(sumFrom50_Before100()).toEqual(3875)
     })
     it('return multiplication Table For Seven',()=>{
-        expect(multiplicationTableForSeven()).toEqual(['7 * 1 = 7', '7 * 2 = 14', '7 * 3 = 21', '7 * 4 = 28', '7 * 5 = 35', '7 * 6 = 42', '7 * 7 = 49', '7 * 8 = 56', '7 * 9 = 63', '7 * 10 = 70'])
+        expect(multiplicationTableForSeven()).toEqual(['7 * 1 = 7', '7 * 2 = 14', '7 * 3 = 21', '7 * 4 = 28', '7 * 5 = 35', 
+        '7 * 6 = 42', '7 * 7 = 49', '7 * 8 = 56', '7 * 9 = 63', '7 * 10 = 70'])
+    })
+    it('return average All Odd Number',()=>{
+        expect(averageAllOddNum(10)).toEqual(6)
     })
 })

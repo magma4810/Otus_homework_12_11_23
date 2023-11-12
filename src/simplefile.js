@@ -1,8 +1,12 @@
-function multiplicationTableForSeven(){
-    const table = [];
-    for(let i = 1;i<11;i++){
-        table.push(`7 * ${i} = ${7*i}`)
+function averageAllOddNum(n){
+    let quanOddNum = 0;
+    let sumQuanOddNum = 0;
+    for (let i = 1;i<n+1;i++){
+        if (i%2 === 0){
+            quanOddNum++;
+            sumQuanOddNum += i;
+        }
     }
-    return table
+    return sumQuanOddNum/quanOddNum;
 }
-console.log(multiplicationTableForSeven())
+console.log(averageAllOddNum(10))
