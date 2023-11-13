@@ -1,12 +1,9 @@
-function averageAllOddNum(n){
-    let quanOddNum = 0;
-    let sumQuanOddNum = 0;
-    for (let i = 1;i<n+1;i++){
-        if (i%2 === 0){
-            quanOddNum++;
-            sumQuanOddNum += i;
-        }
+function objectUser(){
+    const ageNum = prompt('enter age');
+    const user = {
+        age: ageNum,
     }
-    return sumQuanOddNum/quanOddNum;
+    const admin = Object.assign({role: 'admin'},user);
+    return [user,admin]
 }
-console.log(averageAllOddNum(10))
+console.log(objectUser())

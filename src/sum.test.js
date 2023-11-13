@@ -1,4 +1,5 @@
-import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven,averageAllOddNum } from './sum'
+import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven,
+    averageAllOddNum,objectUser } from './sum'
 
 describe('test code' , ()=>{
     it('return sum num', ()=>{
@@ -20,4 +21,8 @@ describe('test code' , ()=>{
     it('return average All Odd Number',()=>{
         expect(averageAllOddNum(10)).toEqual(6)
     })
+    it('return objectUser_Admin',()=>{//???
+        expect(objectUser('5')).toEqual({role: 'admin', age: '5'})
+    })
+
 })

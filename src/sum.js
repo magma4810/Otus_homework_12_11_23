@@ -35,3 +35,11 @@ export function averageAllOddNum(n){
     }
     return sumQuanOddNum/quanOddNum;
 }
+export function objectUser(ageNum){
+    // const ageNum = prompt('enter age');
+    const user = {
+        age: ageNum,
+    }
+    const admin = Object.assign({role: 'admin'},user);
+    return admin
+}
