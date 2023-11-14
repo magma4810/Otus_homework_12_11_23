@@ -1,0 +1,22 @@
+{
+  "name": "otus_homework_12_11_23",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@types/jest": "^29.5.8",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.53.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.0.3"
+  }
+}
