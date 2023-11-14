@@ -75,5 +75,4 @@ export function makeInteractiveList(div){
             button.hidden = true;
         }
     })
-    
 }
