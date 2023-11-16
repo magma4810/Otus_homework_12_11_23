@@ -13,7 +13,6 @@ export function sumFrom50_Before100(){
     let summa = 50;
     for (let i = 50;i<101;i++){
         summa += i
-        console.log(i)
     }
     return summa;
 }
@@ -75,4 +74,16 @@ export function makeInteractiveList(div){
             button.hidden = true;
         }
     })
+}
+export function sumArray(n){
+    return n.reduce((el,sum)=>sum+=el)
+}
+export function doubleArray(n){
+    return n.map((el)=>el*2)
+}
+export function minElArray(n){
+    return Math.min(...n)
+}
+export function maxElArray(n){
+    return Math.max(...n)
 }

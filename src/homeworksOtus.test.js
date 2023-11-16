@@ -1,5 +1,5 @@
 import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven,
-    averageAllOddNum,objectUser,makeInteractiveList } from './homeworksOtus'
+    averageAllOddNum,objectUser,makeInteractiveList,doubleArray,sumArray,minElArray,maxElArray } from './homeworksOtus'
 
 describe('test code' , ()=>{
     it('return sum num', ()=>{
@@ -85,4 +85,20 @@ describe('homework number seven', () =>{
         expect(getLi()).toEqual(['22','333',text1,text2,text3]);
 
     })
+})
+describe('homework number 5',()=>{
+    let array = [5,2,3,7,3,10,3,10,3,4];
+    let double = array.map((el)=>el*2);
+    it('summa Array',()=>{
+        expect(sumArray(array)).toBe(50)
+    });
+    it('double Array',()=>{
+        expect(doubleArray(array)).toStrictEqual(double)
+    });
+    it('min Array',()=>{
+        expect(minElArray(array)).toBe(2);
+    });
+    it('max Array',()=>{
+        expect(maxElArray(array)).toBe(10);
+    });
 })
