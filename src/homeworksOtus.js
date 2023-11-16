@@ -87,3 +87,12 @@ export function minElArray(n){
 export function maxElArray(n){
     return Math.max(...n)
 }
+export function diff(n1,n2){
+    return Math.abs(n1-n2)
+}
+export function isWord(str){
+    return str.length > 1;
+}
+export function pow(a,x){
+    return Math.pow(a,x)
+}

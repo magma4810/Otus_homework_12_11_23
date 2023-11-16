@@ -1,5 +1,6 @@
 import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven,
-    averageAllOddNum,objectUser,makeInteractiveList,doubleArray,sumArray,minElArray,maxElArray } from './homeworksOtus'
+    averageAllOddNum,objectUser,makeInteractiveList,doubleArray,sumArray,minElArray,
+    maxElArray,diff,isWord,pow } from './homeworksOtus'
 
 describe('test code' , ()=>{
     it('return sum num', ()=>{
@@ -100,5 +101,19 @@ describe('homework number 5',()=>{
     });
     it('max Array',()=>{
         expect(maxElArray(array)).toBe(10);
+    });
+})
+describe('homework number 6',()=>{
+    it('test for diff',()=>{
+        expect(diff(10,6)).toBe(4);
+        expect(diff(6,10)).toBe(4);
+    });
+    it('is Word?',()=>{
+        expect(isWord('world')).toBe(true);
+        expect(isWord('d')).toBe(false);
+    });
+    it('pow',()=>{
+        expect(pow(2,5)).toBe(32);
+        expect(pow(8,2)).toBe(64);
     });
 })
