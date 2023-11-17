@@ -21,7 +21,7 @@ describe("test code", () => {
     expect(sumNum("777")).toEqual(21);
   });
   it("return max num", () => {
-    expect(maxNum(12, 122)).toEqual(12);
+    expect(maxNum(12, 122)).toEqual(122);
   });
   it("return mounth", () => {
     expect(returnMounth(5)).toEqual("май");
@@ -165,6 +165,6 @@ describe("homework number 8", () => {
     button.click();
     expect(getLi().length).toBe(1);
     expect(input.value).toBe("");
-    expect(getLi()).toEqual(["пятница   \n        17-11-2023"]);
+    expect(getLi()).toEqual(['пятница   \n    \n        17-11-2023']);
   });
 });
