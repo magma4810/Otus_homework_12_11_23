@@ -11,16 +11,9 @@ module.exports = {
   },
   ignorePatterns: [".eslintrc.js", "babel.config.js", "jest.config.js"],
   plugins: ["jest"],
-  "rules": {
-    "no-console": "off",
-    "no-restricted-syntax": [
-        "error",
-        {
-            "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
-            "message": "Unexpected property on console object was called"
-        }
-    ]
-},
+  rules: {
+    "no-console": "warn",
+  },
   overrides: [
     {
       files: [".eslintrc.js", "babel.config.js", "jest.config.js"],
