@@ -8,10 +8,23 @@ export function maxNum(a, b) {
   return Math.max(a, b);
 }
 export function returnMounth(num) {
-//   const date = new Date(`2022-${num}-15`);????????? не проходят тесты:(
-//   const monthName = date.toLocaleString("default", { month: "long" });
-    const mounth = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
-  return mounth[num+1];
+  //   const date = new Date(`2022-${num}-15`);????????? не проходят тесты:(
+  //   const monthName = date.toLocaleString("default", { month: "long" });
+  const mounth = [
+    "январь",
+    "февраль",
+    "март",
+    "апрель",
+    "май",
+    "июнь",
+    "июль",
+    "август",
+    "сентябрь",
+    "октябрь",
+    "ноябрь",
+    "декабрь",
+  ];
+  return mounth[num - 1];
 }
 export function sumFrom50_Before100() {
   let summa = 50;
