@@ -1,3 +1,3 @@
-import { returnDateWeek } from "./homeworksOtus.js";
+import { returnMounth } from "./homeworksOtus.js";
 
-returnDateWeek(document.querySelector("#app1"));
+console.log(returnMounth(10))

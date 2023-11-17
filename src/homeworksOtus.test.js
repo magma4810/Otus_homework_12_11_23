@@ -165,5 +165,6 @@ describe("homework number 8", () => {
     button.click();
     expect(getLi().length).toBe(1);
     expect(input.value).toBe("");
+    expect(getLi()).toEqual(["пятница   \n        17-11-2023"]);
   });
 });
