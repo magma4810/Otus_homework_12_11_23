@@ -96,3 +96,25 @@ export function isWord(str){
 export function pow(a,x){
     return Math.pow(a,x)
 }
+export function returnDateWeek(el){
+    const input = document.createElement('input');
+    input.type = 'date';
+
+    el.append(input);
+    const list = [];
+    const button = document.createElement('button');
+    button.innerHTML = 'to know';
+    el.append(button);
+    const listHTML = document.createElement('div');
+    el.append(listHTML);
+    button.addEventListener('click',()=>{
+        let date = new Date(input.value);
+        let options = { weekday: "long" };
+        const dayWeek = `${new Intl.DateTimeFormat("ru-US", options).format(date)}   
+        ${(input.value).split('-').reverse().join('-')}`
+        list.push(dayWeek);
+
+        input.value = '';
+        listHTML.innerHTML = `<ol>${list.map((el)=>`<li>${el}</li>`).join('')}</ol>`
+    })
+}

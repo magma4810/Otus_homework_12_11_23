@@ -1,6 +1,6 @@
 import { sumNum,maxNum,returnMounth,sumFrom50_Before100,multiplicationTableForSeven,
     averageAllOddNum,objectUser,makeInteractiveList,doubleArray,sumArray,minElArray,
-    maxElArray,diff,isWord,pow } from './homeworksOtus'
+    maxElArray,diff,isWord,pow,returnDateWeek } from './homeworksOtus'
 
 describe('test code' , ()=>{
     it('return sum num', ()=>{
@@ -26,7 +26,7 @@ describe('test code' , ()=>{
         expect(objectUser('5')).toEqual({role: 'admin', age: '5'})
     })
 })
-describe('homework number seven', () =>{
+describe('homework number 7', () =>{
     let div;
     let button;
     let input;
@@ -116,4 +116,31 @@ describe('homework number 6',()=>{
         expect(pow(2,5)).toBe(32);
         expect(pow(8,2)).toBe(64);
     });
+})
+describe('homework number 8',()=>{
+    let div;
+    let button;
+    let input;
+    beforeEach(()=>{
+        div = document.createElement('div');
+        returnDateWeek(div);
+        button = div.querySelector('button');
+        input = div.querySelector('input');
+    });
+    function getLi(){
+        return [...div.querySelectorAll("li")].map((li) => li.innerHTML);
+    }
+    it('make initial markup',()=>{
+        expect(input).toBeTruthy();
+        expect(button).toBeTruthy();
+        expect(button.innerHTML).toBe('to know');
+    })
+    it("adds new days on button click",()=>{
+        input.value = '2023-11-17';
+        input.dispatchEvent(new Event("input"));
+        button.click();
+        expect(getLi().length).toBe(1);
+        expect(input.value).toBe('');
+        expect(getLi()).toEqual(['пятница   \n        17-11-2023'])
+    })
 })
