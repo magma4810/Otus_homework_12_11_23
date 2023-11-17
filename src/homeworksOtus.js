@@ -113,9 +113,7 @@ export function returnDateWeek(el) {
   button.addEventListener("click", () => {
     let date = new Date(input.value);
     let options = { weekday: "long" };
-    const dayWeek = `${new Intl.DateTimeFormat("ru-US", options).format(
-      date,
-    )}
+    const dayWeek = `${new Intl.DateTimeFormat("ru-US", options).format(date)}
         ${input.value.split("-").reverse().join("-")}`;
     list.push(dayWeek);
     input.value = "";
