@@ -8,6 +8,10 @@
     "test": "jest",
     "prepare": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magma4810/test_11_11.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
