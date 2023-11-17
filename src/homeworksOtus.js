@@ -115,8 +115,7 @@ export function returnDateWeek(el) {
     let options = { weekday: "long" };
     const dayWeek = `${new Intl.DateTimeFormat("ru-US", options).format(
       date,
-    )}   
-    
+    )}
         ${input.value.split("-").reverse().join("-")}`;
     list.push(dayWeek);
     input.value = "";

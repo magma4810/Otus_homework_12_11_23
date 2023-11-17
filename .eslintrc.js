@@ -12,7 +12,7 @@ module.exports = {
   ignorePatterns: [".eslintrc.js", "babel.config.js", "jest.config.js"],
   plugins: ["jest"],
   rules: {
-    "no-console": "warn",
+
   },
   overrides: [
     {
