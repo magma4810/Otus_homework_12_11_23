@@ -120,7 +120,6 @@ export function returnDateWeek(el) {
         ${input.value.split("-").reverse().join("-")}`;
     list.push(dayWeek);
     input.value = "";
-    console.log(list)
     listHTML.innerHTML = `<ol>${list
       .map((el) => `<li>${el}</li>`)
       .join("")}</ol>`;
