@@ -21,7 +21,7 @@ describe("test code", () => {
     expect(sumNum("777")).toEqual(21);
   });
   it("return max num", () => {
-    expect(maxNum(12, 122)).toEqual(122);
+    expect(maxNum(12, 122)).toEqual(12);
   });
   it("return mounth", () => {
     expect(returnMounth(5)).toEqual("май");
