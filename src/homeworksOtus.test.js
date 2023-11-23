@@ -4,7 +4,7 @@ import {
   returnMounth,
   sumFrom50_Before100,
   multiplicationTableForSeven,
-  averageAllOddNum,
+  returnAverageAllOddNum,
   objectUser,
   makeInteractiveList,
   doubleArray,
@@ -44,7 +44,7 @@ describe("test code", () => {
     ]);
   });
   it("return average All Odd Number", () => {
-    expect(averageAllOddNum(10)).toEqual(6);
+    expect(returnAverageAllOddNum(10)).toEqual(6);
   });
   it("return objectUser_Admin", () => {
     //???

@@ -40,7 +40,7 @@ export function multiplicationTableForSeven() {
   }
   return table;
 }
-export function averageAllOddNum(n) {
+export function returnAverageAllOddNum(n) {
   let quanOddNum = 0;
   let sumQuanOddNum = 0;
   for (let i = 1; i < n + 1; i++) {
